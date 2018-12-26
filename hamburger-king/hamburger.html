@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="hamburger_style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".hamburger").click(function () {
+                $(".menu").slideToggle();
+            })
+
+
+            $(window).resize(function () {
+                let w = $(window).width();
+                console.log(w);
+                if (w > 600) {
+                    $(".menu").show();
+                } else {
+                    $(".menu").hide();
+                }
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <nav class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="hamburger">
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
+            <div class="menu">
+                <ul>    
+                    <li>
+                        <a href="#about">LIST 1</a>
+                        <!-- <ul class="submenu">
+                            <li><a href="#">list1</a></li>
+                            <li><a href="#">list2</a></li>
+                            <li><a href="#">list3</a></li>
+                            <li><a href="#">list4</a></li>
+                            <li><a href="#">list5</a></li>
+                        </ul> -->
+                    </li>
+                    <li>
+                        <a href="#">LIST 2</a>
+                        <!-- <ul class="submenu">
+                            <li><a href="#">list1</a></li>
+                            <li><a href="#">list2</a></li>
+                            <li><a href="#">list3</a></li>
+                            <li><a href="#">list4</a></li>
+                        </ul> -->
+                    </li>
+                    <li>
+                        <a href="#">LIST 3</a>
+                        <!-- <ul class="submenu">
+                            <li><a href="#">list1</a></li>
+                            <li><a href="#">list2</a></li>
+                            <li><a href="#">list3</a></li>
+                        </ul> -->
+                    </li>
+                    <li>
+                        <a href="#">LIST 4</a>
+                        <!-- <ul class="submenu">
+                            <li><a href="#">list1</a></li>
+                            <li><a href="#">list2</a></li>
+                        </ul> -->
+                    </li>
+                    <li>
+                        <a href="#">LIST 5</a>
+                        <!-- <ul class="submenu">
+                            <li><a href="#">list1</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="full-width">
+        <h1>TITLE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex optio commodi alias blanditiis temporibus
+            voluptatum illum, saepe facilis ab aut.</p>
+        <a href="#" class="btn">More</a>
+    </header>
+    
+    <div id="about" class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-md-4">
+                <h2>TITLE</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis consectetur dicta porro mollitia
+                    quisquam voluptates repudiandae velit officia. Dolorem, hic.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>TITLE</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis consectetur dicta porro mollitia
+                    quisquam voluptates repudiandae velit officia. Dolorem, hic.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>TITLE</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis consectetur dicta porro mollitia
+                    quisquam voluptates repudiandae velit officia. Dolorem, hic.</p>
+            </div>
+        </div>
+    </div>
+    <div id="ad" class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-md-9 ibc col-12">
+                <p>perspiciatis repellendus odit expedita praesentium accusamus quibusdam reiciendis est natus mollitia
+                    vitae inventore eveniet dolor, id et?</p>
+            </div>
+            <div class="col-md-3 ibc col-12">
+                <a href="#" class="btn">Sign On</a>
+            </div>
+        </div>
+    </div>
+    <div id="service" class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-md-6 ibc">
+                <h2>TITLE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, accusantium?</p>
+                <a href="#" class="btn">More</a>
+            </div>
+            <div class="col-md-6 ibc">
+                <img src="https://source.unsplash.com/random/800x600?sig=3" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="ad" class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-md-9 ibc col-12">
+                <p>perspiciatis repellendus odit expedita praesentium accusamus quibusdam reiciendis est natus mollitia
+                    vitae inventore eveniet dolor, id et?</p>
+            </div>
+            <div class="col-md-3 ibc col-12">
+                <a href="#" class="btn">Sign On</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="service-2" class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-md-6 ibc">
+                <img src="https://source.unsplash.com/random/800x600?sig=4" alt="">
+            </div>
+            <div class="col-md-6 ibc">
+                <h2>TITLE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, accusantium?</p>
+                <a href="#" class="btn">More</a>
+            </div>
+        </div>
+    </div>
+    <div id="map" class="full-width">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.807203793296!2d120.54610531457813!3d24.0730929844313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469388d096261d3%3A0x377647d579ff24ce!2zNTAw5b2w5YyW57ij5b2w5YyW5biC5Y2X6YOt6Lev5LiA5q61MjIw5be3MS046Jmf!5e0!3m2!1szh-TW!2stw!4v1542252583814"
+            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <footer class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-md-3 col-12">
+                <ul class="inter">
+                    <li><a href="#">Latest Release</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">CopyRights</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-12">
+                <ul class="inter">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Ad</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-12">
+                <ul class="inter">
+                    <li><a href="#">Graphic</a></li>
+                    <li><a href="#">Web</a></li>
+                    <li><a href="#">3D</a></li>
+                    <li><a href="#">Motion Graphic</a></li>
+                    <li><a href="#">AR / VR</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-12 inter">
+                <div class="col-3">
+                    <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href="#"><i class="fab fa-pinterest fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+<script>
+    $('#about').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+
+
+
+
+</script>
+
+</html>

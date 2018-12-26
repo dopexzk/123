@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+html,body,h1,h2,h3,h4,h5,h6,p,img,ul,ol,li,div,span{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    vertical-align: top;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.btn{
+    display: block;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 30px;
+    background-color: #fa0;
+    color: #000;
+}
+@media screen and (min-width: 540px){
+    .btn{
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: #fa0;
+        color: #000;
+        width: auto;
+    }
+}

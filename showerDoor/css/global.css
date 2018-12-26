@@ -1,0 +1,40 @@
+/* background */
+.bg-my-dark {
+    background-color: #0B1013;
+}
+
+.bg-my-bright {
+    background-color: #FCFAF2;
+}
+
+bg-object {
+    background-color: #33A6B8;
+}
+
+/* line */
+.heading-line {
+    /* margin: 0 auto; */
+    display: block;
+    height: 2px;
+    width: 95px;
+    background: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.heading-line2 {
+    background-color: #fff;
+    display: block;
+    height: 2px;
+    width: 95px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pd {
+    padding: 133.5px 0;
+}
+div {
+    margin: 0;
+    padding: 0;
+}

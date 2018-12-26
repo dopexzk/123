@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300); */
+
+        .frame {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+            margin-top: -200px;
+            margin-left: -200px;
+            border-radius: 2px;
+            box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            background: #2c3e50;
+            color: #fff;
+            font-family: "Open Sans", Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .menu-icon [class^="line-"] {
+            width: 40px;
+            height: 2px;
+            border-radius: 1px;
+            background: #fff;
+            transition: all 500ms cubic-bezier(0.7, 0, 0.3, 1);
+            transition-delay: 100ms;
+        }
+
+        .menu-icon .middle {
+            position: relative;
+            margin: 10px 0;
+            height: 2px;
+        }
+
+        .menu-icon .middle [class^="line-middle"] {
+            position: absolute;
+            transition-delay: 0;
+        }
+
+        .menu-icon.opened .line-top,
+        .menu-icon:hover .line-top {
+            -webkit-transform: translateX(100%) scaleX(0);
+            transform: translateX(100%) scaleX(0);
+            transition-delay: 0;
+        }
+
+        .menu-icon.opened .line-bottom,
+        .menu-icon:hover .line-bottom {
+            -webkit-transform: translateX(-100%) scaleX(0);
+            transform: translateX(-100%) scaleX(0);
+            transition-delay: 0;
+        }
+
+        .menu-icon.opened .line-middle-1,
+        .menu-icon:hover .line-middle-1 {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            transition-delay: 100ms;
+        }
+
+        .menu-icon.opened .line-middle-2,
+        .menu-icon:hover .line-middle-2 {
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            transition-delay: 100ms;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="center">
+            <div class="menu-icon">
+                <div class="line-top"></div>
+                <div class="middle">
+                    <div class="line-middle-1"></div>
+                    <div class="line-middle-2"></div>
+                </div>
+                <div class="line-bottom"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

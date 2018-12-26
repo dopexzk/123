@@ -1,0 +1,271 @@
+        .clearfix::after{
+        content: "";
+        display: block;
+        clear: both;
+        }
+        body{
+            background-color: rgba(226, 220, 220, 0.199);
+        }
+        nav {
+            width: 100%;
+            height: 60px;
+            background: rgba(0, 0, 0, .3);
+            position: absolute;
+            z-index: 50;
+        }
+
+        nav ul {
+            float: right;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav ul li {
+            text-align: center;
+            float: left;
+            line-height: 60px;
+        }
+
+        nav ul li a {
+            width: 100px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            display: block;
+            text-decoration: none;
+            font-family: fantasy;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:visited {
+            text-decoration: none;
+            background: rgba(0, 0, 0, .5);
+            color: #fff;
+        }
+        .imgw {
+            position: relative;
+        }
+        .fk {
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+        .words {
+            font-size: 23px;
+            padding: 5px 5PX 5px 15px;
+            margin: auto;
+            letter-spacing: 10px;
+            /*letter-spacing文字間隔*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            border: 1px solid;
+        }
+        
+
+
+
+
+
+
+        h1{
+            text-align: center;
+            font-family: fantasy;
+        }
+        #no7 h2{
+            color: red;
+            text-align: center; 
+            font-size: 28px;
+        }
+        h3{
+            color: red;
+            text-align: center; 
+            font-size: 28px;
+        }
+        b{
+            color: blue;
+            
+        }
+        img{
+            float: center;
+        }
+        #banner {
+            background-image: url(https://source.unsplash.com/random/1887x1000?sig=1);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        #ad {
+            background-image: url(https://source.unsplash.com/random/1887x1000?sig=2);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #product {
+            background-image: url(https://source.unsplash.com/random/1887x1000?sig=3);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #apple {
+            background-image: url(https://source.unsplash.com/random/1887x1000?sig=4);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #banana {
+            background-image: url(https://source.unsplash.com/random/1887x1000?sig=5);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #orange {
+            background-image: url(https://source.unsplash.com/random/1887x1000?sig=6);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #banner h1 {
+            text-align: center;
+            line-height: 500px;
+            color: rgb(255, 255, 255);
+        }
+        #ad h1 {
+            text-align: center;
+            line-height: 500px;
+            color: rgb(255, 255, 255);
+        }
+        #product h1 {
+            text-align: center;
+            line-height: 500px;
+            color: rgb(255, 255, 255);
+        }
+        #apple h1 {
+            text-align: center;
+            line-height: 500px;
+            color: rgb(255, 255, 255);
+        }
+        #banana h1 {
+            text-align: center;
+            line-height: 500px;
+            color: rgb(255, 255, 255);
+        }
+        #orange h1 {
+            text-align: center;
+            line-height: 500px;
+            color: rgb(255, 255, 255);
+        }
+        .menu{
+            float: right;
+        }
+        .menu ul{
+            /* text-align: right; */
+            /* display: inline-block; */
+            list-style: none;
+        }
+        .menu a{
+            
+            /* display: inline-block; */
+            text-decoration: none;
+            margin:  auto;
+            padding: 0 10px 10px 10px;
+        }
+        #no2{
+            border: 1px solid orange ;
+            width: 350px;
+            height: 350px;
+            text-align: center;
+            margin: 20px auto;
+            background-color: #fff;
+            /* padding: 20px 0 10px 0; */
+        }
+        #no2 img{
+            padding: 20px 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 60px;
+            /* border-radius: 4px; */
+            padding: 5px;
+
+        }
+        #sk2 b{
+            font-size: 18px;
+            color: red;
+        }
+        
+        #qaz .img{
+            background-image: url("https://source.unsplash.com/random/600x600?sig=1");
+            margin: 0 auto;
+            width: 600px;
+            height: 600px;
+        }
+        #wsx .img{
+            background-image: url("https://source.unsplash.com/random/600x600?sig=2");
+            margin: 0 auto;
+            width: 600px;
+            height: 600px;
+        }
+        #edc .img{
+            background-image: url("https://source.unsplash.com/random/600x600?sig=3");
+            margin: 0 auto;
+            width: 600px;
+            height: 600px;
+        }
+        #rfv .img{
+            background-image: url("https://source.unsplash.com/random/600x600?sig=4");
+            margin: 0 auto;
+            width: 600px;
+            height: 600px;
+        }
+        #no3{
+          
+            text-align: center;
+            margin: auto;
+        }
+        #no3 #jp6y4{
+            
+            padding: 10px 80px;
+            text-align: left;
+        }
+        #no3 .read1{
+            text-align: right;
+        }
+        #no4{
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+            /* top: 10px; */
+        }
+        /* -------------沛祺加的------------ */
+
+       
+        #no4 .img{
+           
+            text-align: center;
+            
+        }
+       
+
+        /* ----------沛祺加的-------------- */
+
+        
+        #no5{
+            width: 50%;
+            text-align: center;
+            margin: auto;
+        }
+        #no6{
+            width: 100%;
+            text-align: center;
+            margin: auto;
+        }
+        #no7{
+            width: 50%;
+            text-align: center;
+            margin: auto;
+        }
+        #no8{
+            width: 50%;
+            text-align: center;
+            margin: auto;
+        }

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>99婚攝 | nice night</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $("nav").find("a").click(function(){
+                let target = $(this).data("target");
+                let topOffset = $(target).offset().top;
+                console.log(topOffset);
+                $("html,body").animate({
+                    scrollTop:topOffset
+                })
+            })
+        
+       $("#gotop").click(function(){
+           $("html,body").animate({
+               scrollTop: 0
+           })
+           return false;
+       })
+
+       $(window).scroll(function(){
+           let h = $("html,body").scrollTop();
+            console.log(h);
+            if(h>1000){
+                // $("#gotop").fadeIn();
+                $("#gotop").removeClass();
+                $("#gotop").show().addClass("animated flip");
+
+            }else{
+                // $("#gotop").fadeOut();
+                $("#gotop").removeClass();
+                $("#gotop").addClass("animated hinge");
+            }
+                
+       })
+    })
+       
+
+    </script>
+</head>
+
+<body>
+    <!-- <div id="nav-info" class="full-width clearfix">
+        <div class="fixed-width">
+            <div class="addr">
+                桃園區幼獅路二段三號
+            </div>
+            <div class="donate">
+                <a href="#" class="btn">Donate</a>
+            </div>
+            <div class="register">
+                <ul>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    <nav class="full-width clearfix">
+        <div class="fixed-width">
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#" data-target="#index">首頁</a></li>
+                    <li><a href="#" data-target="#about">關於99 | about</a></li>
+                    <li><a href="#" data-target="#news">手札筆記 | note</a></li>
+                    <li><a href="#" data-target="#upcoming">預約檔期 | reservation</a></li>
+                    <li><a href="#" data-target="#service">作品欣賞 | portfolio</a></li>
+                    <li><a href="#" data-target="#hw">廠商推薦 | service</a></li>
+                    <li><a href="#" data-target="#contact">聯絡我們 | contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/20.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/19.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/18.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/17.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/16.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/15.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/14.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/13.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/12.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/11.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/10.jpg" alt="Third slide">
+              </div>
+            </div>
+          </div> -->
+
+    <header class="full-width"></header>
+    <!-- <div class="full-width clearfix" id="nav-btn">
+        <div class="fixed-width">
+            <div class="col-2">
+                <a href="#" class="tonight">29</a>
+            </div>
+            <div class="col-5">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>TITLE QWDFSDG DFHDJ FHDHT</h3>
+            </div>
+            <div class="col-2">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione maiores quisquam nobis esse quas
+                    rerum incidunt voluptatem enim, unde accusamus!</p>
+            </div>
+            <div class="col-3">
+                <a href="#" class="btn">READ MORE</a>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div id="about" class="full-width clearfix">
+        <div class="fixed-width">
+            <div class="col-7">
+                <div class="col-12">
+                    <div class="col-2"></div>
+                    <h2 class="line">關於nice night。婚禮攝影</h2>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-10">
+                    <h3>國際ISPWP、WPJA、AGWPGA、WPPI成員，並獲獎無數</h3>
+                    <!-- <h3>對於美，總有一份執著，
+                            希望畫面可以溫暖，永恆，雋永
+                            將最真的畫面，能深植人心的那一份感動停留住 
+                            Tiamo希望完成你的故事、想做的畫面主題，或是那最純真的一刻
+                            為你記錄，夢想與現實的結合！</h3> -->
+                    <p>婚攝小凱曾是一位廣告設計師，因為對於攝影的熱愛與執著捨去了熟悉的廣告業，轉投入婚禮攝影師。憑藉過往累積的經驗與美感用獨特的的美學觀點打開婚禮攝影的新頁。</p>
+                    <a href="#" class="btn">MORE</a>
+                </div>
+            </div>
+            <div class="col-5">
+                <!-- <img src="https://source.unsplash.com/random/300x400" alt=""> -->
+                <img src="images/picer.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+<div id="events" class="full-width clearfix">
+        <div class="fixed-width">
+            <div class="col-4">
+                <h2>婚禮提醒事項</h2>
+                <p>Hi!我是凱
+                        要結婚了對於籌備上應該很不安吧？我把過去幾年拍攝上遇到的問題整理了一份注意事項，
+                        希望可以對你們有所幫助，也讓拍攝更加順利，照片更加豐富。</p>
+                <a href="#" class="btn">MORE</a>
+            </div>
+            <div class="col-4">
+                <h2>婚紗提醒事項</h2>
+                <p>給我的婚紗新人的婚紗拍攝參考與建議
+                        有你們的配合一定會讓婚紗拍攝更順利~有更棒的回憶與作品喔^^
+                        以下是這些年來跟新人一起共同獲得的許多寶貴經驗與建議, 與你們分享～
+                            </p>
+                <a href="#" class="btn">MORE</a>
+            </div>
+            <div class="col-4">
+                <h2>婚禮儀式習俗</h2>
+                <p>中國的婚禮可分為三個階段﹕
+                        1. 婚前禮，即「訂婚」
+                        2. 正婚禮，即「結婚」或「成婚」的禮儀，就是夫妻結合的意思
+                        3. 婚後禮，是「成妻」或「成婿」之禮，這表示了男女結婚後的扮演的角色
+                        </p>
+                <a href="#" class="btn">MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="news" class="full-width">
+            <div class="fixed-width clearfix">
+                <div class="col-7">
+                    <div class="col-2"></div>
+                    <h2 class="line">手札筆記</h2>
+                </div>
+            </div>
+            <div class="fixed-width clearfix">
+                <div class="col-4">
+                    <div class="pic">
+                        <!-- <img src="https://source.unsplash.com/random/400x300?sig=7" alt=""> -->
+                        <img src="images/15.jpg" alt="">
+                        <div class="date">
+                            <div class="day">29 <br>FEB</div>
+                        </div>
+                    </div>
+                    <h3>婚攝新人推薦文章總整理</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur voluptatibus numquam
+                        architecto
+                        atque alias laboriosam magnam harum earum ad quam.
+                    </p>
+                    <a href="#" class="btn">MORE</a>
+                </div>
+                <div class="col-4">
+                    <div class="pic">
+                        <!-- <img src="https://source.unsplash.com/random/400x300?sig=8" alt=""> -->
+                        <img src="images/2.jpg" alt="">
+                        <div class="date">
+                            <div class="day">18 <br>JUN</div>
+                        </div>
+                    </div>
+                    <h3>攝影師小凱的專訪</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur voluptatibus numquam
+                        architecto
+                        atque alias laboriosam magnam harum earum ad quam.
+                    </p>
+                    <a href="#" class="btn">MORE</a>
+                </div>
+                <div class="col-4">
+                    <div class="pic">
+                        <!-- <img src="https://source.unsplash.com/random/400x300?sig=9" alt=""> -->
+                        <img src="images/3.jpg" alt="">
+                        <div class="date">
+                            <div class="day">2 <br>DEC</div>
+                        </div>
+                    </div>
+                    <h3>拍攝心得分享</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur voluptatibus numquam
+                        architecto
+                        atque alias laboriosam magnam harum earum ad quam.
+                    </p>
+                    <a href="#" class="btn">MORE</a>
+                </div>
+            </div>
+        </div>
+    <div id="upcoming" class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-7">
+                <div class="col-2"></div>
+                <h2 class="line line--light">預約檔期</h2>
+            </div>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-1">
+                <div class="date">
+                    <div class="day">2019 <br> JAN</div>
+                </div>
+            </div>
+            <div class="col-11">
+                <div class="content clearfix">
+                    <div class="title">婚紗攝影服務</div>
+                    <div class="time">January 已滿<br>February 開放預約</div>
+                    <div class="addr">服務流程 ： 預約日期＞指定攝影師＞付訂簽約＞面談規劃拍攝行程＞挑禮服＞拍攝＞線上挑片＞精修＞確認＞寄送成品</div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-1">
+                <div class="date">
+                    <div class="day">2019 <br> MAY</div>
+                </div>
+            </div>
+            <div class="col-11">
+                <div class="content clearfix">
+                    <div class="title">婚禮攝影服務</div>
+                    <div class="time">目前滿額中<br>April 開始接受預約</div>
+                    <div class="addr">服務流程 ： 預約日期＞指定攝影師＞付訂簽約＞面談規劃拍攝風格＞全程拍攝＞線上挑片＞精修＞確認＞寄送成品</div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-1">
+                <div class="date">
+                    <div class="day">2019 <br> OCT</div>
+                </div>
+            </div>
+            <div class="col-11">
+                <div class="content clearfix">
+                    <div class="title">紀錄片拍攝服務</div>
+                    <div class="time">September 還有名額<br>November 還有名額</div>
+                    <div class="addr">服務流程 ： 網路洽談＞預約日期＞付訂簽約＞面談規劃拍攝行程及服裝搭配＞拍攝＞線上挑片＞精修＞確認＞寄送成品</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="service" class="full-width clearfix">
+        <div class="fixed-width clearfix">
+            <div class="col-7">
+                <div class="col-2"></div>
+                <h2 class="line">作品欣賞</h2>
+            </div>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-4">
+                <img class="op" src="images/1.jpg" alt="">
+            </div>
+            <div class="col-8">
+                <div class="col-6">
+                    <img class="tp" src="images/4.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <img class="tp" src="images/5.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <img class="tp" src="images/6.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <img class="tp" src="images/7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-8">
+                <div class="col-6">
+                    <img class="tp" src="images/8.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <img class="tp" src="images/11.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <img class="tp" src="images/12.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <img class="tp" src="images/14.jpg" alt="">
+                </div>
+            </div>
+                <div class="col-4">
+                    <img class="op" src="images/10.jpg" alt="">
+                </div>                                            
+        </div>
+    </div>
+
+    <div id="hw" class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-7">
+                <div class="col-2"></div>
+                <h2 class="line line--light">廠商推薦</h2>
+            </div>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-8 doing">
+                <!-- <div class="col-4"><img src="https://source.unsplash.com/random/100x150" alt=""></div> -->
+                <div class="col-4"><img src="images/19.jpg" alt=""></div>
+                <div class="col-8">
+                    <h1>" 優質婚禮企劃 "</h1>
+                    <ul>
+                        <li><a href="#">瑪莎計畫 Masa’s Plan</a></li>
+                        <BR></BR>
+                        <li><a href="#">妮熊幸福工坊</a></li>
+                        <br>
+                        <li><a href="#">CCIC 囍客</a></li>
+                        <br>
+                        <li><a href="#">閣樓婚禮顧問</a></li>
+                        <br>
+                        <li><a href="#">Chloe Wedding 可洛依婚禮設計</a></li>
+                        <br>
+                        <li><a href="#">吉兒。梁 婚禮設計顧問</a></li>
+                        <br>
+                        <li><a href="#">GRACE DECO</a></li>
+                        <br>
+                        <li><a href="#">王亭又</a></li>
+                    </ul>
+                    <!-- <p class="pp">瑪莎計畫 Masa’s Plan Wedding Consultant、妮熊幸福工坊、CCIC 囍客、閣樓婚禮顧問、Chloe Wedding 可洛依婚禮設計、吉兒。梁 婚禮設計顧問、GRACE DECO、王亭又</p> -->
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="col-2">
+                    <a href="#"><i class="far fa-play-circle fa-2x"></i></a>
+                </div>
+                <div class="col-10">
+                    <h3>優質婚禮主持人推薦</h3>
+                </div>
+                <div class="col-12 pp">
+                    <a href="#">Amanda、李佩純 Patty、Ellnie維霓、Amy 沂萱、楊小黎、純涵、甜湯圓、Michelle Tseng、旻珊</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="col-2">
+                    <a href="#"><i class="far fa-play-circle fa-2x"></i></a>
+                </div>
+                <div class="col-10">
+                    <h3>優質新秘 / 造型師推薦</h3>
+                </div>
+                <div class="col-12 pp">
+                    <a href="#">Elsa.Double Happiness、CHANTL 香堤兒時尚造型、依莎彩妝造型、Ariesy 阿瑞思婚禮婚紗造型、MarryMe＊米兒造型藝術</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="col-2">
+                    <a href="#"><i class="far fa-play-circle fa-2x"></i></a>
+                </div>
+                <div class="col-10">
+                    <h3>優質婚紗禮服推薦</h3>
+                </div>
+                <div class="col-12 pp">
+                    <a class="aa" href="#">Dios手作婚紗、Asha＆Lace法式手工婚紗、D-S 手工訂製婚紗、Coronation. 蕾絲訂製婚紗台北店</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="full-width clearfix">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0398671966414!2d121.16983591475707!3d24.930711748578723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682361c065cbe9%3A0xc24080034849b3e3!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5qGD56u56IuX5YiG572y5bm8542F6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1544455276150"
+            width="100%" height="670" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <!-- 前往google地圖 -->
+        <!-- 輸入地址 -->
+        <!-- 點選分享 -->
+        <!-- 嵌入地圖 -->
+        <!-- 複製HTML -->
+        <!-- 回到HTML貼上即可 -->
+    </div>
+    <footer class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-8">
+                design by zk &copy; 2018
+            </div>
+            <div class="col-4">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-line"></i></a>
+                <a href="#"><i class="fab fa-weixin"></i></a>
+            </div>
+        </div>
+        <!-- Font Awesome 可以link一些圖案 -->
+        <!-- 進入網址先點選 Hoe To Use -->
+        <!-- 複製連結放到head裡面link -->
+
+    </footer>
+
+    <!-- <div id="about"></div>
+    <div id="news"></div>
+    <div id="service"></div>
+    <div id="hw"></div>
+    <div id="contact"></div> -->
+
+    <a href="javascript:;" id="gotop">TOP</a>
+</body>
+
+</html>

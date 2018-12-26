@@ -1,0 +1,358 @@
+.btn{
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: rgb(31, 0, 0);
+    color: #fff;
+    margin-top: 10px;
+}
+h2{
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#gotop{
+    position:fixed;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color:#ccc;
+    text-decoration: none;
+    color: #081b3f;
+    z-index: 999;
+    right: 10px;
+    bottom: 10px;
+    line-height: 40px;
+    text-align: center; 
+    display: none;
+}
+/*nav-info*/
+#nav-info{
+    /* height: 50px; */
+    /*給導覽列一個可以line-height的高度*/
+    /*有按鈕就用padding推*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    background-color: rgba(255,255,255,.5);
+
+}
+#nav-info a{
+    display: block;
+    padding: 10px 15px;
+    /*要給display-block之後寫hover才會成區塊*/
+}
+#nav-info .addr{
+    float: left;
+    padding: 10px 15px;
+}
+#nav-info .register{
+    float: right;
+}
+#nav-info .donate{
+    float: right;
+}
+#nav-info li{
+    float: left;
+    /*要水平就要設float不然版型會跑掉*/
+}
+/*以上是另外示範*/
+
+
+
+/*nav*/
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    /* top:81.6px; */
+    background-color: rgba(255,255,255,.5);
+}
+nav .logo{
+    float: left;
+}
+nav .menu{
+    float: right;
+}
+nav li{
+    float: left;
+}
+nav a{
+    display: block;
+    padding: 10px 15px;
+    transition: all .2s;
+    text-decoration: none;
+    color: #000;
+}
+nav .menu a:hover{
+    border: 2px dashed;
+    text-decoration: none;
+    color: rgb(65, 1, 97);
+}
+
+/* #carousel{
+    width: 100%;
+    height: 100%;
+} */
+
+/*header*/
+header{
+    height: 750px;
+    background-image: url(images/9.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*#nav-btn*/
+/* #nav-btn{
+    /* position: fixed; */
+
+/* #nav-btn .tonight{
+    border:1px solid ;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #ccc;
+}
+#nav-btn .btn a{
+    display: block;
+    padding: 20px;
+}
+#nav-btn{}
+#nav-btn{}
+#nav-btn{}
+#nav-btn{} */ 
+
+/*feature*/
+#about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* #about h2 , #gallery h2{
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+} */
+#about h3{
+    font-size: 30px;
+    font-weight: normal;/*字體還原*/
+    line-height: 1.5em;/*行高*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#about p{
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+#about .col-5{
+    /* padding: 10px;用padding往內硬推使圖片縮小 */
+    padding-top: 60px;
+}
+.line,.line--light{
+    position: relative;
+}
+.line--light{
+    color: #fff;
+}
+.line::before{
+    content: "";
+    display: block;
+    border-top: 3px solid rgb(160, 20, 20);
+    position: absolute;
+    width: 50px;
+    top: 25px;/*向下推*/
+    left: 0px;/*向右推*/
+}
+.line--light::before{
+    content: "";
+    display: block;
+    border-top: 3px solid rgb(255, 255, 255);
+    position: absolute;
+    width: 50px;
+    top: 25px;/*向下推*/
+    left: 0px;/*向右推*/
+}
+
+
+
+/*events*/
+#events{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: 
+    linear-gradient(rgba(255, 60, 60, 0.418),rgba(226, 248, 100, 0.418),rgba(116, 137, 253, 0.377),rgba(159,147,123,.6),rgba(99,66,33,.6)),
+    /* url(https://source.unsplash.com/random/1200x400); */
+    url(images/13.jpg);
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: 400px;
+}
+#events p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+
+/*gallery*/
+#service{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#service .col-8{
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+#service .op{
+    width: 350px;
+    height: 730px;
+}
+#service .tp{
+    width: 350px;
+    height: 350px;
+
+}
+
+
+/*upcoming*/
+#upcoming{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image:
+    linear-gradient(rgba(175, 175, 175, 0.7),rgba(0,0,0,.7))
+    ,url(images/18.jpg);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%x;
+    height: 600px;
+}
+#upcoming .date{
+    background-color: rgb(160, 20, 20);
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    display: table;
+}
+#upcoming .day{
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+#upcoming .content{
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    height: 80px;
+    width: 100%;
+    display: table;
+    padding: 10px;
+    color:  #fff; 
+}
+
+#upcoming .title , #upcoming .time , #upcoming .addr{
+    display: table-cell;
+    vertical-align: middle;
+    width: calc( 100% / 3 );
+}
+
+
+/*blog*/
+#news{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#news .pic{
+    position: relative;
+    margin-bottom: 20px;
+}
+#news .pic .date{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(160, 20, 20);
+    bottom: 0;
+    display: table;
+    text-align: center;
+}
+#news .day{
+    display: table-cell;
+    vertical-align: middle;
+}
+#news h3{
+    margin-bottom: 20px;
+}
+#news p{
+    margin-bottom: 20px;
+}
+
+
+
+/*pastor*/
+#hw{
+    background-image:
+    linear-gradient(rgba(80, 80, 80, 0.7),rgba(0,0,0,.7)),
+    url(images/18.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+#hw .col-4{
+    padding-left: 0;
+}
+#hw .doing{
+    margin-left: 0;
+}
+#hw .pp{
+    color: #fff;
+    font-size: 1em;
+}
+#hw  a{
+    color: #c2b6f8!important;
+    font-size: 14px;
+    text-decoration: none;
+}                        
+#hw h1{
+    padding-bottom: 40px;
+}
+#hw img{
+    width: 270px;
+    height: 450px;
+}
+#hw .col-8{
+    text-align: center;
+}
+
+
+
+/*footer*/
+footer{
+    height: 30px;
+    line-height: 30px;
+}
+footer .col-4{
+    text-align: right;
+}
+footer .col-4 a{
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+footer .col-4 a:hover{
+    background-color: rgb(44, 44, 44);
+    color: aqua;
+}

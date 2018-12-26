@@ -1,0 +1,208 @@
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* loading特效 */
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 9999;
+}
+.loader{color:#fff;position:fixed;box-sizing:border-box;left:-9999px;top:-9999px;width:0;height:0;overflow:hidden;z-index:999999}.loader:after,.loader:before{box-sizing:border-box;display:none}.loader.is-active{background-color:rgba(0,0,0,.85);width:100%;height:100%;left:0;top:0}.loader.is-active:after,.loader.is-active:before{display:block}@keyframes rotation{0%{transform:rotate(0)}to{transform:rotate(359deg)}}@keyframes blink{0%{opacity:.5}to{opacity:1}}.loader[data-text]:before{position:fixed;left:0;top:50%;color:currentColor;font-family:Helvetica,Arial,sans-serif;text-align:center;width:100%;font-size:14px}.loader[data-text=""]:before{content:"Loading"}.loader[data-text]:not([data-text=""]):before{content:attr(data-text)}.loader[data-text][data-blink]:before{animation:blink 1s linear infinite alternate}.loader-default[data-text]:before{top:calc(50% - 63px)}.loader-default:after{content:"";position:fixed;width:48px;height:48px;border:8px solid #fff;border-left-color:transparent;border-radius:50%;top:calc(50% - 24px);left:calc(50% - 24px);animation:rotation 1s linear infinite}.loader-default[data-half]:after{border-right-color:transparent}.loader-default[data-inverse]:after{animation-direction:reverse}
+
+
+/* nav */
+.navTranslucent {
+  background-color:
+    rgba(11, 16, 19, .8) !important;
+}
+
+/* goTop */
+#gotop {
+  position: fixed;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #33A6B8;
+  text-decoration: none;
+  color: #fff;
+  z-index: 999;
+  right: 60px;
+  bottom: 60px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 30%;
+  display: none;
+}
+
+/* carousel */
+/* 在固定選單下面的那層外面再包一層推padding-top,看那層固定選單高度多少padding-top就設多少 */
+/* .fixTop {
+    padding-top: 
+  } */
+
+/* products */
+.home-section {
+  width: 100%;
+  padding: 150px 0;
+}
+
+/* .bg-gray {
+  background: #f8f8f8;
+} */
+
+.section-heading {
+  margin-bottom: 50px;
+}
+
+.section-heading h2 {
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+.section-heading .heading-line {
+  margin: 0 auto;
+  display: block;
+  height: 1px;
+  width: 80px;
+  background: #333;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.og-grid {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.og-grid li {
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+  vertical-align: top;
+  height: 250px;
+}
+
+.og-grid li>a,
+.og-grid li>a img {
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+}
+
+.og-grid li.og-expanded>a::after {
+  top: auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: none;
+  border-width: 15px;
+  left: 50%;
+  margin: -20px 0 0 -15px;
+}
+
+/* contactUs */
+.contactUs {
+  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .4)), url(https://source.unsplash.com/random/1600x500);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* text-align: center; */
+  color: #fff;
+}
+
+.contactUs input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 0 0 16px 0;
+}
+
+
+.contactUs input[type="submit"] {
+  background: #06A7C4;
+  border: 1px solid #06A7C4;
+  color: #fff;
+  padding: 0.5em 2em;
+  border-radius: 0.5em;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  outline: none;
+  cursor: pointer;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 540px) {
+  .fr {
+    float: right;
+  }
+
+  .contactUs input[type="submit"] {
+    background: #06A7C4;
+    border: 1px solid #06A7C4;
+    color: #fff;
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    outline: none;
+    cursor: pointer;
+    width: auto;
+    margin-bottom: 50px;
+  }
+}
+
+.contactUs input[type="submit"]:hover {
+  background-color: rgb(68, 207, 231);
+}
+
+.contactInformation h4 {
+  padding-top: 10px;
+}
+
+
+/* footer */
+.copyright p {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  color: #b4c3d1;
+}

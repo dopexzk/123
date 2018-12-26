@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .gallery img{
+            width: 900px;
+            height: 550px;
+        }
+        img{
+            vertical-align: top;
+        }
+        .thumbs{
+            font-size: 0;
+        }
+        .thumbs img{
+            background-size: contain;
+            width: 150px;
+            height: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gallery" id="gallery">
+        <img src="https://source.unsplash.com/random" alt="" id="picture">
+    </div>
+    <div class="thumbs">
+        <img src="https://source.unsplash.com/random/?sig=2" alt="" class="thumb">
+        <img src="https://source.unsplash.com/random/?sig=3" alt="" class="thumb">
+        <img src="https://source.unsplash.com/random/?sig=4" alt="" class="thumb">
+        <img src="https://source.unsplash.com/random/?sig=5" alt="" class="thumb">
+        <img src="https://source.unsplash.com/random/?sig=6" alt="" class="thumb">
+        <img src="https://source.unsplash.com/random/?sig=7" alt="" class="thumb">
+    </div>
+    <script>
+        let thumb = document.querySelectorAll(".thumb");
+        thumb.forEach(function(e){
+            e.addEventListener("click",function(){
+                let picture = document.getElementById("picture");
+                let t = this.getAttribute("src");
+                picture.setAttribute("src",t);
+            })
+        })
+    </script>
+</body>
+</html>
