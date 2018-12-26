@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>網誌首頁</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+
+
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "Microsoft Jhenghei";
+        }
+        nav{
+            background-color: rgba(226, 238, 255, 0.521);
+            /* display: flex; */
+            position: fixed;
+            justify-content: center;
+            margin-top: 100px;
+            /* height: 500px;
+            width: 100px; */
+        }
+        nav a{
+            text-decoration: none;
+            color: #7283a3;
+            display: block;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        header{
+            background-image: linear-gradient(rgba(125,20,88,.8),rgba(70,99,35,.6),rgba(125,105,95,.4),rgba(12,49,100,.2))
+            ,url(https://source.unsplash.com/random?sig=1);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 300px;
+            padding-bottom: 300px;
+            text-align: center;
+            color: #fff;
+        }
+        header p{
+            padding-bottom : 50px;
+        }
+        header a:hover{
+            background-color: #000;
+            color: #fa0;
+        }
+        #news {
+            height: 1200px;
+            background-color: rgba(240, 248, 255, 0.603);
+        }
+        #news .one_1{
+            background-color: rgba(0, 255, 255, 0.5);
+        }
+        #news .one_2{
+            background-color: rgb(200, 243, 216, 0.5);
+        }
+        #news .one_3{
+            background-color: rgb(250, 215, 253, 0.5);
+        }
+        #about {
+            height: 1200px;
+            background-color: rgb(240, 240, 240);
+        }
+        #about .about_1{
+            background-color: azure;
+        }
+        
+        #insert {
+            height: 800px;
+            background-image: linear-gradient(120deg, rgba(229, 202, 255, 0.6),  rgba(136, 255, 165, 0.6),rgba(125, 229, 255, 0.432),rgba(255, 146, 126, 0.6));
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        #insert h1{
+            padding-top: 100px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        #insert_title{
+            margin: 30px 0;
+        }
+        #box1{
+            margin-left: 550px;
+            margin-right: 80px;
+            text-align: center;
+        }
+        #update {
+            height: 800px;
+            background-image: linear-gradient(50deg, rgba(0, 255, 255, .6), rgba(244, 245, 184, 0.6),rgba(255, 203, 239, 0.6),rgba(161, 161, 161, 0.6));
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        #update h1{
+            padding-top: 100px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        #update_title{
+            margin: 30px 0;
+        }
+        #box2{
+            margin-left: 550px;
+            margin-right: 80px;
+            text-align: center;
+        }
+     
+        #gotop{
+            position:fixed;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color:#ccc;
+            text-decoration: none;
+            color: #081b3f;
+            z-index: 999;
+            right: 10px;
+            bottom: 10px;
+            line-height: 40px;
+            text-align: center; 
+            display: none;
+            border-radius:25px; 
+        }
+        #gotop:hover{
+            background-color: #081b3f;
+            color: #ccc;
+        }
+        .row{
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("nav").find("a").click(function () {
+                let target = $(this).data("target");
+                let topOffset = $(target).offset().top;
+                console.log(topOffset);
+                $("html,body").animate({
+                    scrollTop: topOffset
+                })
+            })
+
+            $("#gotop").click(function () {
+                $("html,body").animate({
+                    scrollTop: 0
+                })
+                return false;
+            })
+
+            $(window).scroll(function () {
+                let h = $("html,body").scrollTop();
+                console.log(h);
+                if (h > 1000) {
+                    // $("#gotop").fadeIn();
+                    $("#gotop").removeClass();
+                    $("#gotop").show().addClass("animated flip");
+
+                } else {
+                    // $("#gotop").fadeOut();
+                    $("#gotop").removeClass();
+                    $("#gotop").addClass("animated hinge");
+                }
+
+            })
+        })
+
+
+    </script>
+</head>
+
+
+
+
+
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <ul>
+            <li><a href="#" data-target="#news">最新貼文</a></li>
+            <li><a href="#" data-target="#about">心情手札</a></li>
+            <li><a href="#" data-target="#insert">新增貼文</a></li>
+            <li><a href="#" data-target="#update">修改貼文</a></li>
+            <li><a href="login.php" target="_blank">登入留言</a></li>
+        </ul>
+    </nav>
+    <!-- 導覽列 -->
+    <header class="full-width">
+        <h1>heart 手札</h1>
+        <p>心情抒發get</p>
+        <a href="#"><i class="fas fa-angle-double-down fa-2x"></i></a>
+    </header>
+
+
+    <!-- 最新文章 -->
+    <div id="news">
+        <div class="container one">
+            <div class="row">
+                <div class="col-6">
+                    <img src="images/1.jpg" width="400px" height="350px" alt="">
+                </div>
+                <div class="col-6 one_1">
+                    <h2>文章標題</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae blanditiis soluta laborum
+                        eaque ea? Saepe est iure laudantium nam beatae dolores consequuntur hic pariatur, possimus
+                        cupiditate laborum, vitae quis illo repellat, vel quaerat? Error odit iusto impedit quo vel
+                        deleniti voluptatibus quasi dolore, maxime est delectus ipsum officia quas molestiae.</p><br>
+                    <a href="#">MORE</a><br>
+                    <b>2018-09-10 投稿</b>
+                </div>
+            </div>
+        </div>
+        <div class="container two">
+            <div class="row">
+                <div class="col-6 one_2">
+                    <h2>文章標題</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae blanditiis soluta laborum
+                        eaque ea? Saepe est iure laudantium nam beatae dolores consequuntur hic pariatur, possimus
+                        cupiditate laborum, vitae quis illo repellat, vel quaerat? Error odit iusto impedit quo vel
+                        deleniti voluptatibus quasi dolore, maxime est delectus ipsum officia quas molestiae.</p><br>
+                    <a href="#">MORE</a><br>
+                    <b>2018-09-10 投稿</b>
+                </div>
+                <div class="col-6">
+                    <img src="images/2.jpg" width="400px" height="350px" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container three">
+            <div class="row">
+                <div class="col-6">
+                    <img src="images/3.jpg" width="400px" height="350px" alt="">
+                </div>
+                <div class="col-6 one_3">
+                    <h2>文章標題</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae blanditiis soluta laborum
+                        eaque ea? Saepe est iure laudantium nam beatae dolores consequuntur hic pariatur, possimus
+                        cupiditate laborum, vitae quis illo repellat, vel quaerat? Error odit iusto impedit quo vel
+                        deleniti voluptatibus quasi dolore, maxime est delectus ipsum officia quas molestiae.</p><br>
+                    <a href="#">MORE</a><br>
+                    <b>2018-09-10 投稿</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 最新文章 -->
+
+
+    <!-- 心情手札 -->
+    <div id="about">
+        <div class="container four">
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/4.jpg" width="300px" height="300px" alt="">
+                </div>
+                <div class="col-8">
+                    <h2>文章標題</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae blanditiis soluta laborum
+                        eaque ea? Saepe est iure laudantium nam beatae dolores consequuntur hic pariatur, possimus
+                        cupiditate laborum, vitae quis illo repellat, vel quaerat? Error odit iusto impedit quo vel
+                        deleniti voluptatibus quasi dolore, maxime est delectus ipsum officia quas molestiae.</p><br>
+                    <a href="#">MORE</a><br>
+                    <b>2018-09-10 投稿</b>
+                </div>
+            </div>
+        </div>
+        <div class="container five">
+            <div class="row about_1">
+                <div class="col-3">
+                    <img src="images/5.jpg" height="100px" width="80px" alt="">
+                    <h3>文章標題</h3>
+                    <b>2018-09-10 投稿</b>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia excepturi, unde minima
+                        facilis, consequuntur voluptatum obcaecati quidem delectus nihil, veniam rerum odio natus
+                        voluptate voluptates!</p>
+                    <a href="#">MORE</a>
+                </div>
+                <div class="col-3">
+                    <img src="images/6.jpg" height="100px" width="80px" alt="">
+                    <h3>文章標題</h3>
+                    <b>2018-09-10 投稿</b>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia excepturi, unde minima
+                        facilis, consequuntur voluptatum obcaecati quidem delectus nihil, veniam rerum odio natus
+                        voluptate voluptates!</p>
+                    <a href="#">MORE</a>
+                </div>
+                <div class="col-3">
+                    <img src="images/7.jpg" height="100px" width="80px" alt="">
+                    <h3>文章標題</h3>
+                    <b>2018-09-10 投稿</b>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia excepturi, unde minima
+                        facilis, consequuntur voluptatum obcaecati quidem delectus nihil, veniam rerum odio natus
+                        voluptate voluptates!</p>
+                    <a href="#">MORE</a>
+                </div>
+                <div class="col-3">
+                    <img src="images/8.jpg" height="100px" width="80px" alt="">
+                    <h3>文章標題</h3>
+                    <b>2018-09-10 投稿</b>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia excepturi, unde minima
+                        facilis, consequuntur voluptatum obcaecati quidem delectus nihil, veniam rerum odio natus
+                        voluptate voluptates!</p>
+                    <a href="#">MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="container six">
+            <div class="row">
+                <div class="col-8">
+                    <h2>文章標題</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae blanditiis soluta laborum
+                        eaque ea? Saepe est iure laudantium nam beatae dolores consequuntur hic pariatur, possimus
+                        cupiditate laborum, vitae quis illo repellat, vel quaerat? Error odit iusto impedit quo vel
+                        deleniti voluptatibus quasi dolore, maxime est delectus ipsum officia quas molestiae.</p><br>
+                    <a href="#">MORE</a><br>
+                    <b>2018-12-27 投稿</b>
+                </div>
+                <div class="col-4">
+                    <img src="images/9.jpg" width="300px" height="300px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 心情手札 -->
+
+
+    <!-- 新增文章 -->
+    <div id="insert">
+        <div class="container seven">
+            <div class="row">
+                <form action="" method="POST">
+                    <h1>新增文章</h1>
+                    <b>標題</b>
+                    <input type="text" name="title" size="35"><br>
+                    <b>圖片</b>
+                    <input type="file" id="insert_title" name="in" size="35"><br>
+                    <b>內容</b>
+                    <textarea name="in" id="" cols="155" rows="10">新增內容</textarea>
+                    <input type="submit" value="送出" id="box1">
+                    <input type="reset" value="清除">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 新增文章 -->
+
+
+    <!-- 修改文章 -->
+    <div id="update">
+        <div class="container eight">
+            <div class="row">
+                <form action="" method="POST">
+                    <h1>修改文章</h1>
+                    <b>標題</b>
+                    <input type="text" name="title" size="35"><br>
+                    <b>圖片</b>
+                    <input type="file" id="update_title" name="in" size="35"><br>
+                    <b>內容</b>
+                    <textarea name="in" id="" cols="155" rows="10">修改內容</textarea>
+                    <input type="submit" value="送出" id="box2">
+                    <input type="reset" value="清除">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 修改文章 -->
+
+
+
+    <a href="javascript:;" id="gotop">TOP</a>
+
+
+
+</body>
+
+</html
